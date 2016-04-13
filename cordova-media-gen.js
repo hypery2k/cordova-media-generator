@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 "use strict";
-var gm = require('gm'),
+var gm = require('gm').subClass({imageMagick: true}),
     mkdirp = require('mkdirp'),
     path = require('path'),
     fs = require('fs'),
@@ -75,8 +75,7 @@ function resize(width, height, bgColour, imagePath, outputFilename, outputPath) 
 }
 
 function generate() {
-    var deferred = q.defer()
-
+    var deferred = q.defer();
 
     fs.readdir(path.join(process.cwd(), "platforms", "ios"), function (err, result) {
         if (err) {
@@ -668,4 +667,4 @@ module.exports = {
     __resize: resize,
     __generate: generate,
     __genConfig: genConfig
-}
+};

@@ -13,15 +13,15 @@
     "app store"
   ],
   "author": "Martin Reinhardt",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "dependencies": {
-    "async": "^0.9.0",
+    "async": "0.9.2",
     "cordova": "^6.0.0",
-    "gm": "^1.17.0",
-    "mkdirp": "^0.5.0",
-    "phantom": "^0.7.2",
-    "phantomjs": "^1.9.16",
-    "q": "^2.0.3"
+    "gm": "1.22.0",
+    "mkdirp": "0.5.1",
+    "phantom": "0.7.2",
+    "phantomjs": "1.9.20",
+    "q": "2.0.3"
   },
   "devDependencies": {
     "chai": "^2.3.0",
