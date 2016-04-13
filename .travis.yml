@@ -4,6 +4,7 @@ node_js:
   - "0.10"
   - "0.8"
 script:
+  - npm test
   - npm install . -g
   - ./runIntegrationTests.sh
 before_install:

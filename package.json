@@ -1,11 +1,8 @@
 {
   "name": "cordova-media-gen",
-  "version": "0.5.3-dev",
+  "version": "0.6.0",
   "description": "Generates Cordova Media (Splashscreens, Icons & Screenshots)",
   "main": "cordova-media-gen.js",
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -w -R spec test/specs/"
-  },
   "keywords": [
     "cordova",
     "icons",
@@ -19,12 +16,12 @@
   "license": "Apache 2.0",
   "dependencies": {
     "async": "^0.9.0",
+    "cordova": "^6.0.0",
     "gm": "^1.17.0",
     "mkdirp": "^0.5.0",
     "phantom": "^0.7.2",
     "phantomjs": "^1.9.16",
-    "q": "^2.0.3",
-    "weak": "^0.4.0"
+    "q": "^2.0.3"
   },
   "devDependencies": {
     "chai": "^2.3.0",
@@ -46,5 +43,9 @@
   "preferGlobal": "true",
   "bin": {
     "cordova-media-gen": "cordova-media-gen.js"
+  },
+  "scripts": {
+    "pretest": "npm install",
+    "test": "mocha -w -R spec test/specs/"
   }
 }
