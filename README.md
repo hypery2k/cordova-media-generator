@@ -1,12 +1,12 @@
-# cordova-media-gen
+# Cordova Media Generator
 
-[![Build Status](https://travis-ci.org/hypery2k/cordova-media-generator.svg?branch=master)](https://travis-ci.org/hypery2k/cordova-media-generator) [![npm version](https://badge.fury.io/js/cordova-media-gen.svg)](http://badge.fury.io/js/cordova-media-generator) [![Dependency Status](https://david-dm.org/hypery2k/cordova-media-generator.svg)](https://david-dm.org/hypery2k/cordova-media-generator) [![devDependency Status](https://david-dm.org/hypery2k/cordova-media-generator/dev-status.svg)](https://david-dm.org/hypery2k/cordova-media-generator#info=devDependencies) 
+[![Build Status](https://travis-ci.org/hypery2k/cordova-media-gen.svg?branch=master)](https://travis-ci.org/hypery2k/cordova-media-gen) [![npm version](https://badge.fury.io/js/cordova-media-gen.svg)](http://badge.fury.io/js/cordova-media-gen) [![Dependency Status](https://david-dm.org/hypery2k/cordova-media-gen.svg)](https://david-dm.org/hypery2k/cordova-media-gen) [![devDependency Status](https://david-dm.org/hypery2k/cordova-media-gen/dev-status.svg)](https://david-dm.org/hypery2k/cordova-media-gen#info=devDependencies) 
 
 [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=11673029)](https://www.bountysource.com/trackers/11673029-hypery2k-cordova-media-generator?utm_source=11673029&utm_medium=shield&utm_campaign=TRACKER_BADGE) [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=mreinhardt&url=https://github.com/hypery2k/cordova-media-gen&title=badges&language=&tags=github&category=software)
 
 > CLI Utility that generates Cordova / Phonegap image assets required for app store submission, icons, and splash screens. 
 
-[![NPM](https://nodei.co/npm/cordova-media-gen.png)](https://nodei.co/npm/cordova-media-gen/)
+[![NPM](https://nodei.co/npm/cordova-media-gen.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/cordova-media-gen/)
 
 It requires your logo to have a solid background colour but does not distort or lose any image content so everything is at the maximum size without loss.
 
