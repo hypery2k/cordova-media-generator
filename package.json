@@ -15,7 +15,7 @@
   "author": "Martin Reinhardt",
   "license": "Apache-2.0",
   "dependencies": {
-    "async": "2.1.2",
+    "async": "2.1.4",
     "cordova": "^6.0.0",
     "gm": "1.23.0",
     "mkdirp": "0.5.1",
