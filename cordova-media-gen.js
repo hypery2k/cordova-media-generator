@@ -283,9 +283,51 @@ function generate() {
                 filename: "icon.png",
                 source: process.argv[2] || config.icon || config.image
             }, {
+                width: 36,
+                height: 36,
+                path: "android/res/drawable-ldpi",
+                filename: "icon.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
+                width: 36,
+                height: 36,
+                path: "android/res/mipmap-ldpi",
+                filename: "icon.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
+                width: 48,
+                height: 48,
+                path: "android/res/drawable-mdpi",
+                filename: "icon.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
+                width: 48,
+                height: 48,
+                path: "android/res/mipmap-mdpi",
+                filename: "icon.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
                 width: 72,
                 height: 72,
                 path: "android/res/drawable-hdpi",
+                filename: "icon.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
+                width: 72,
+                height: 72,
+                path: "android/res/mipmap-hdpi",
+                filename: "icon.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
+                width: 96,
+                height: 96,
+                path: "android/res/drawable-xhdpi",
+                filename: "icon.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
+                width: 96,
+                height: 96,
+                path: "android/res/mipmap-xhdpi",
                 filename: "icon.png",
                 source: process.argv[2] || config.icon || config.image
             }, {
@@ -313,18 +355,6 @@ function generate() {
                 filename: "screen.png",
                 source: process.argv[2] || config.splash || config.image
             }, {
-                width: 36,
-                height: 36,
-                path: "android/res/drawable-ldpi",
-                filename: "icon.png",
-                source: process.argv[2] || config.icon || config.image
-            }, {
-                width: 48,
-                height: 48,
-                path: "android/res/drawable-mdpi",
-                filename: "icon.png",
-                source: process.argv[2] || config.icon || config.image
-            }, {
                 width: 480,
                 height: 800,
                 path: "android/res/drawable-port-hdpi",
@@ -348,12 +378,6 @@ function generate() {
                 path: "android/res/drawable-port-xhdpi",
                 filename: "screen.png",
                 source: process.argv[2] || config.splash || config.image
-            }, {
-                width: 96,
-                height: 96,
-                path: "android/res/drawable-xhdpi",
-                filename: "icon.png",
-                source: process.argv[2] || config.icon || config.image
             },
 
 

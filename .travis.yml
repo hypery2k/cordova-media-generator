@@ -1,13 +1,22 @@
+sudo: false
 language: node_js
 node_js:
   - "0.12"
-  - "0.10"
-  - "0.8"
+  - "4.0"
+  - "4.3"
+  - "4"
+  - "5.0"
+  - "5"
+env:
+  - NPM_VERSION=3
+  - NPM_VERSION=2
 script:
   - npm test
   - npm install . -g
   - ./runIntegrationTests.sh
 before_install:
+  - npm install -g npm@$NPM_VERSION
+before_script:
   - npm install -g npm 
   - npm install -g cordova
   - sudo apt-get update -qq
