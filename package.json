@@ -28,7 +28,7 @@
     "grunt-mocha": "^0.4.12",
     "mocha": "^2.2.4",
     "should": "^6.0.1",
-    "which": "~1.0.5"
+    "which": "~1.2.14"
   },
   "repository": {
     "type": "git",
