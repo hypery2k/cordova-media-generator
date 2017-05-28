@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 "use strict";
-var gm = require('gm').subClass({imageMagick: true}),
+var gm = require('gm').subClass({ imageMagick: true }),
     mkdirp = require('mkdirp'),
     path = require('path'),
     fs = require('fs'),
@@ -15,7 +15,7 @@ var mediaPath = config.mediaPath || 'Media';
 
 function resize(width, height, bgColour, imagePath, outputFilename, outputPath) {
     var deferred = q.defer();
-    gm(path.join(process.cwd(), imagePath)).size(function (error, size) {
+    gm(path.join(process.cwd(), imagePath)).size(function(error, size) {
 
         if (error) {
             console.error("GM Error", error);
@@ -54,11 +54,11 @@ function resize(width, height, bgColour, imagePath, outputFilename, outputPath) 
             var x = (width / 2) - (imageWidth / 2);
             var y = (height / 2) - (imageHeight / 2);
 
-            mkdirp(path.join(process.cwd(), "platforms", outputPath), function (err) {
+            mkdirp(path.join(process.cwd(), "platforms", outputPath), function(err) {
                 image.background(bgColour)
                     .gravity('Center')
                     .extent(width, height)
-                    .write(path.join(process.cwd(), "platforms", outputPath, outputFilename), function (error) {
+                    .write(path.join(process.cwd(), "platforms", outputPath, outputFilename), function(error) {
                         if (error) {
                             console.error("Write file error", error);
                             deferred.reject(error);
@@ -77,11 +77,11 @@ function resize(width, height, bgColour, imagePath, outputFilename, outputPath) 
 function generate() {
     var deferred = q.defer();
 
-    fs.readdir(path.join(process.cwd(), "platforms", "ios"), function (err, result) {
+    fs.readdir(path.join(process.cwd(), "platforms", "ios"), function(err, result) {
         if (err) {
             console.log("Error getting iOS path", err);
         } else {
-            result.forEach(function (item) {
+            result.forEach(function(item) {
                 var match = item.match(/(.+?)(\.[^.]*$|$)/i);
                 if (match[2] == ".xcodeproj") {
                     iOSProjectName = match[1];
@@ -212,12 +212,18 @@ function generate() {
                 source: process.argv[2] || config.icon || config.image
             },
 
-            //iOS Spash
+            // iOS Splash
             {
                 width: 640,
                 height: 1136,
                 path: "ios/" + iOSProjectName + "/Images.xcassets/LaunchImage.launchimage",
                 filename: "Default-568h@2x~iphone.png",
+                source: process.argv[2] || config.splash || config.image
+            }, {
+                width: 640,
+                height: 1136,
+                path: "ios/" + iOSProjectName + "/Images.xcassets/LaunchImage.launchimage",
+                filename: "Default-568h@2x.png",
                 source: process.argv[2] || config.splash || config.image
             }, {
                 width: 2048,
@@ -257,7 +263,7 @@ function generate() {
                 source: process.argv[2] || config.splash || config.image
             }, {
                 width: 750,
-                height: 1344,
+                height: 1334,
                 path: "ios/" + iOSProjectName + "/Images.xcassets/LaunchImage.launchimage",
                 filename: "Default-667h.png",
                 source: process.argv[2] || config.splash || config.image
@@ -583,7 +589,7 @@ function generate() {
 
 
         if (config.customImages) {
-            config.customImages.forEach(function (item) {
+            config.customImages.forEach(function(item) {
                 images.push(item);
             });
         }
@@ -602,7 +608,7 @@ function generate() {
             console.log("Generating " + totalImages + " images so you don't have to");
             console.log("------------------------------");
             screenshots.generateAll();
-            images.forEach(function (image) {
+            images.forEach(function(image) {
                 var background, sourceImage;
 
 
@@ -663,7 +669,7 @@ function genConfig() {
             "url": "http://www.google.com",
             "name": "homepage"
         }]
-    }, null, 4), function (err) {
+    }, null, 4), function(err) {
         deferred.resolve("success");
     });
     console.log("Created `mediagen-config.json` file in the current directory.");
