@@ -44,6 +44,7 @@
   },
   "scripts": {
     "pretest": "npm install",
-    "test": "mocha -w -R spec test/specs/"
+    "test": "mocha -R spec test/specs/",
+    "watch-test": "mocha -w -R spec test/specs/"
   }
 }
