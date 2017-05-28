@@ -26,6 +26,7 @@
     "chai-as-promised": "^5.0.0",
     "conventional-changelog-cli": "1.3.1",
     "mocha": "3.4.2",
+    "rimraf": "2.6.1",
     "should": "11.2.1",
     "which": "1.2.14"
   },
@@ -42,6 +43,9 @@
     "cordova-media-gen": "cordova-media-gen.js"
   },
   "scripts": {
+    "preclean": "npm i rimraf",
+    "clean": "rimraf node_modules",
+    "postclean": "npm i",
     "pretest": "npm install",
     "test": "mocha -R spec test/specs/",
     "watch-test": "mocha -w -R spec test/specs/",
