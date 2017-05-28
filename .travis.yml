@@ -11,6 +11,10 @@ node_js:
 env:
   - NPM_VERSION=3
   - NPM_VERSION=2
+addons:
+  apt:
+    packages:
+    - imagemagick
 script:
   - npm test
   - npm install . -g
@@ -20,5 +24,3 @@ before_install:
 before_script:
   - npm install -g npm 
   - npm install -g cordova
-  - sudo apt-get update -qq
-  - sudo apt-get install imagemagick
