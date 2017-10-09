@@ -337,6 +337,18 @@ function generate() {
                 filename: "icon.png",
                 source: process.argv[2] || config.icon || config.image
             }, {
+                width: 140,
+                height: 140,
+                path: "android/res/mipmap-xxhdpi",
+                filename: "icon.png",
+                source: process.argv[2] || config.icon || config.image
+            },  {
+                width: 192,
+                height: 192,
+                path: "android/res/mipmap-xxxhdpi",
+                filename: "icon.png",
+                source: process.argv[2] || config.icon || config.image
+            },  {
                 width: 800,
                 height: 480,
                 path: "android/res/drawable-land-hdpi",
@@ -382,6 +394,18 @@ function generate() {
                 width: 720,
                 height: 1280,
                 path: "android/res/drawable-port-xhdpi",
+                filename: "screen.png",
+                source: process.argv[2] || config.splash || config.image
+            }, {
+                width: 960,
+                height: 1600,
+                path: "android/res/drawable-port-xxhdpi",
+                filename: "screen.png",
+                source: process.argv[2] || config.splash || config.image
+            }, {
+                width: 1280,
+                height: 1920,
+                path: "android/res/drawable-port-xxxhdpi",
                 filename: "screen.png",
                 source: process.argv[2] || config.splash || config.image
             },
