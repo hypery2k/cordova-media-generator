@@ -1,3 +1,13 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/hypery2k/cordova-media-generator/compare/v1.0.0...v1.0.1) (2017-10-09)
+
+
+### Bug Fixes
+
+* **android:** Support for higher Android resolutions ([7e73713](https://github.com/hypery2k/cordova-media-generator/commit/7e73713))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/hypery2k/cordova-media-generator/compare/v0.6.0...v1.0.0) (2017-05-28)
 
