@@ -97,6 +97,12 @@ function generate() {
         var images = [
             //IOS Icons
             {
+                width: 1024,
+                height: 1024,
+                path: "ios/" + iOSProjectName + "/Images.xcassets/AppIcon.appiconset",
+                filename: "icon-1024.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
                 width: 180,
                 height: 180,
                 path: "ios/" + iOSProjectName + "/Images.xcassets/AppIcon.appiconset",
@@ -209,6 +215,30 @@ function generate() {
                 height: 114,
                 path: "ios/" + iOSProjectName + "/Images.xcassets/AppIcon.appiconset",
                 filename: "icon@2x.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
+                width: 40,
+                height: 40,
+                path: "ios/" + iOSProjectName + "/Images.xcassets/AppIcon.appiconset",
+                filename: "icon-20@2x.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
+                width: 60,
+                height: 60,
+                path: "ios/" + iOSProjectName + "/Images.xcassets/AppIcon.appiconset",
+                filename: "icon-20@3x.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
+                width: 20,
+                height: 20,
+                path: "ios/" + iOSProjectName + "/Images.xcassets/AppIcon.appiconset",
+                filename: "icon-20.png",
+                source: process.argv[2] || config.icon || config.image
+            }, {
+                width: 40,
+                height: 40,
+                path: "ios/" + iOSProjectName + "/Images.xcassets/AppIcon.appiconset",
+                filename: "icon-20@2x.png",
                 source: process.argv[2] || config.icon || config.image
             },
 
@@ -342,13 +372,13 @@ function generate() {
                 path: "android/res/mipmap-xxhdpi",
                 filename: "icon.png",
                 source: process.argv[2] || config.icon || config.image
-            },  {
+            }, {
                 width: 192,
                 height: 192,
                 path: "android/res/mipmap-xxxhdpi",
                 filename: "icon.png",
                 source: process.argv[2] || config.icon || config.image
-            },  {
+            }, {
                 width: 800,
                 height: 480,
                 path: "android/res/drawable-land-hdpi",
