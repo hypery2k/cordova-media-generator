@@ -309,6 +309,18 @@ function generate() {
                 path: "ios/" + iOSProjectName + "/Images.xcassets/LaunchImage.launchimage",
                 filename: "Default-Landscape-736h.png",
                 source: process.argv[2] || config.splash || config.image
+            }, {
+                width: 1125,
+                height: 2436,
+                path: "ios/" + iOSProjectName + "/Images.xcassets/LaunchImage.launchimage",
+                filename: "Default-2436h.png",
+                source: process.argv[2] || config.splash || config.image
+            }, {
+                width: 2436,
+                height: 1125,
+                path: "ios/" + iOSProjectName + "/Images.xcassets/LaunchImage.launchimage",
+                filename: "Default-Landscape-2436h.png",
+                source: process.argv[2] || config.splash || config.image
             },
 
             //Android Icon & Splash
