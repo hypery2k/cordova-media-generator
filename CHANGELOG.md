@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/hypery2k/cordova-media-generator/compare/v1.1.0...v1.1.1) (2018-01-02)
+
+
+### Features
+
+* **iPhoneX:** Support for new iPhone X ([e597907](https://github.com/hypery2k/cordova-media-generator/commit/e597907))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/hypery2k/cordova-media-generator/compare/v1.0.1...v1.1.0) (2017-11-28)
 
