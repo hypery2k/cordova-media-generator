@@ -16,7 +16,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "async": "2.4.1",
-    "gm": "1.22.0",
+    "gm": "1.23.1",
     "mkdirp": "0.5.1",
     "phantom": "2.1.21",
     "q": "2.0.3"
