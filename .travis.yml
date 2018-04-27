@@ -8,6 +8,7 @@ node_js:
   - "5"
   - "6"
   - "7"
+  - "10"
 env:
   - NPM_VERSION=4
   - NPM_VERSION=3
